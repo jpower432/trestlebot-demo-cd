@@ -37,7 +37,7 @@ jobs:
             git tag "${VERSION}"
             git push origin "${VERSION}"
       - name: Create Release
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ steps.get_installation_token.outputs.token }}
           script: |
